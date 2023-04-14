@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif ;
+}
+html {
+    font-size: 10px;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+}
+.lift-cection {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.lift-cection img {
+    padding-left: 16px;
+    width:  100px ;
+}
+
+.mid-cection {
+    display: flex;
+    align-items: center;
+    margin-left: -9px;
+}
+.mid-cection form{
+    display: flex;
+    width: 350px;
+    height: 35px;
+}
+.mid-cection input {
+    width: 100%;
+    border-radius: 2px 0 0 2px;
+    padding: 12px;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+.mid-cection button {
+    width: 64px;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 2px 2px 0 ;
+    padding-top: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.mid-cection .mic { 
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #f9f9f9f9;
+    cursor: pointer;
+
+}
+.mid-cection button:hover {
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+}
+
+.right-cection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+}
+
+.right-cection a {
+    color: black;
+    padding-right: 18px;
+    text-decoration: none;
+}
+
+.content-area {
+    height: calc(100vh - 56px);
+    display: flex;
+    background-color: #f9f9f9f9;
+}
+
+aside {
+    height: 100%;
+    width: 223px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7px 0 1.5rem;
+    margin: 6px 0;  
+   
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link span {
+    margin-left: 11px;
+    font-size: 1.4rem;
+    line-height: 2em;
+    font-weight: 400;
+    color: #303030;
+}
+
+.active {
+    background-color: #e7e7e7;
+
+}
+
+#active-span {
+    font-weight: 500;
+}
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 10px 0;
+    border: none; 
+}
+
+nav p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    color: #606060;
+    text-transform: uppercase;
+}
+
+.channle-img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 15px 8px;
+    border-top: 3px solid #ddd;
+    overflow-y: auto;  
+}
+
+.videos-contenr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.video {
+    width: 250px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 187px;
+    margin-bottom: 12px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.video-detals {
+    display: flex;
+}
+
+.creator-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.tetle {
+    display: flex;
+    flex-direction: column;
+}
+
+.tetle a {
+    text-decoration: none;
+}
+
+.video-tetle {
+    color: rgb(3, 3, 3);
+    font-size: 1.6rem;
+    max-width: 278px;
+    font-weight: 500;
+    line-height: 2.2rem;
+    mask-position: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.video-creator,
+.tetle span {
+    color: rgb(90,90,90);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+}
